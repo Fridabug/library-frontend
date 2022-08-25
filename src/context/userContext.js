@@ -24,7 +24,7 @@ export const UserProvider = ({children}) => {
         axios.post('http://localhost:5001/user/login', formData)
         .then(response => {
 
-            if(response.data._id) {
+            if(response.data.email) {
                 setCurrentUser(response.data)
             }
             setMessage(response.data)
