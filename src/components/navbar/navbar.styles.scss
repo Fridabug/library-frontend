@@ -1,0 +1,27 @@
+@use '../UI/_variables.sass' as *;
+@use '../UI/button.scss' as *;
+
+.navbar-container {
+    position: sticky;
+    bottom: 0;
+    background-color: $base-color;
+    width: 100%;
+    padding: 1rem;
+    text-align: right;
+    position: fixed;
+    top: 0;
+    span {
+        color: $highlight-color;
+        font-family: $font-primary;
+        cursor: pointer;
+    }
+}
+
+.navbar-border {
+    width: 100px;
+    height: 100px;
+    border: 1px solid $highlight-color;
+    .width div {
+
+    }
+}
